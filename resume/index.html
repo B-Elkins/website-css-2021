@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>Resume | My Website</title>
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <header id="header">
       <h1>Resume</h1>
-      <nav id="navigation">
-        <a href="/website_2021/">Home</a>
-        <a href="/website_2021/pictures/">Epic Pictures</a>
+      <nav class="navigation">
+        <a href="/">Home</a>
+        <a href="/pictures/">Epic Pictures</a>
       </nav>
     </header>
     <main class="h-resume" id="content">
       <article class="h-card" id="resume">
         <header>
           <h2 class="p-name" id="resume-heading">Boston Elkins</h2>
-          <ul class="p-contact" id="contact">
+          <ul class="p-contact grid-container" id="contact">
             <li>
               <a class="p-tel" id="phonenumber" href="tel:+1-555-555-5555"
                 >(555) 555-0199</a
@@ -36,13 +37,13 @@
         </header>
         <section id="objective">
           <h3>Objective</h3>
-          <p class="p-summary">
+          <p class="p-summary" id="objective">
             Responsible university student studying IT looking for employment.
           </p>
         </section>
         <section id="education">
           <h3>Education</h3>
-          <ol class="p-education">
+          <ol class="p-education grid-container">
             <li>
               <ul class="h-card">
                 <li class="p-name">Illinois Institute of Technology</li>
@@ -67,7 +68,7 @@
         </section>
         <section id="volunteer-work">
           <h3>Volunteer Work</h3>
-          <ol class="p-experience">
+          <ol class="p-experience grid-container">
             <li class="h-card">
               <ul>
                 <li class="p-name">National Honors Society</li>
@@ -82,7 +83,7 @@
         </section>
         <section id="work">
           <h3>Work Experience</h3>
-          <ol class="p-experience">
+          <ol class="p-experience grid-container">
             <li class="h-card">
               <ul>
                 <li class="p-name">Galvin Library</li>
@@ -94,7 +95,7 @@
         </section>
         <section id="skills">
           <h3>Additional Skills and Certifications</h3>
-          <ul class="p-skill">
+          <ul class="p-skill grid-container">
             <li>TestOut PcPro Certified</li>
             <li>Gets along well with</li>
             <li>Dedicated worker</li>
@@ -106,7 +107,7 @@
         </section>
         <section>
           <h3>References</h3>
-          <ul class="h-card">
+          <ul class="h-card grid-container">
             <li>
               <ul>
                 <li class="p-name">Teacher</li>
