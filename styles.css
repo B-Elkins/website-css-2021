@@ -6,208 +6,8 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 18px;
-  background-color: #BBBBF1;
-  overflow-wrap: anywhere;
-}
-
-.picture-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-img {
-  max-width: 100%;
-}
-
-.color {
-  background-color: lavender;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 1.5em;
-  line-height: 36px;
-  text-align: center;
-  padding-bottom: 24px;
-}
-
-h2 {
-  font-size: 1.5em; /** 18 x 2.25 **/
-  line-height: 36px; /** 24 x 2.25**/
-  padding-bottom: 24px;
-}
-
-h3 {
-  font-weight: bolder;
-}
-
-#objective p {
-  font-size: 0.677em;
-  padding-left: 12px;
-  background-color: lavender;
-}
-
-.section-content-container {
-  padding-left: 12px;
-  font-size: 0.677em;
-}
-
-#contact {
-  font-size: 0.677em;
-}
-
-.navigation {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr ;
-  text-align: center;
-}
-
-.navigation a {
-  font-size: 18px;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  background-color: lavender;
-}
-
-.bulleted-list {
-  list-style-type: disc;
-}
-
-.bulleted-list .term {
-  font-size: 8px;
-  font-weight: bold;
-}
-
-.embellishment-container {
-  padding-bottom: 24px;
-}
-
-.embellishment-container li {
-  background-color: lavender;
-  text-align: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.references {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  font-size: 0.444em;
-  line-height: 10.656px;
-}
-
-.references ul {
-  margin-bottom: 12px;
-  margin-top: 12px;
-}
-
-footer {
-  padding-top: 24px;
-}
-
-@media screen and (min-width: 200px) {
-  h1 {
-    font-size: 2.25em;
-  }
-}
-
-@media screen and (min-width: 310px) {
-  h1 {
-    font-size: 3.797em;
-    line-height: 54px;
-  }
-}
-
-@media screen and (min-width: 441px) {
-  h1 {
-    font-size: 91.125px; /** 18 x 5.063 **/
-    line-height: 121.512px; /* 24 x 5.063 */
-    margin: 22.488px;
-  }
-
-  h2 {
-    font-size: 40.5px; /** 18 x 2.25 **/
-    line-height: 54px; /** 24 x 2.25**/
-    padding-bottom: 18px;
-  }
-
-  h3 {
-    font-size: 27px; /** 27 x 1.5 **/
-    line-height: 36px; /** 24 * 1.5 **/
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-
-  img {
-    max-width: 50vw;
-  }
-
-  .bulleted-list {
-    list-style-type: disc;
-  }
-
-  .section-content-container {
-    padding-left: 90px;
-  }
-
-  .section-content-container.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .embellishment-container li {
-    font-size: 40.5px; /** 18 x 2.25 **/
-    line-height: 54px; /** 24 x 2.25**/
-    padding: 17px;
-    text-align: center;
-    margin-right: 30%;
-    margin-left: 30%;
-  }
-
-  .references {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    font-size: 1rem;
-    line-height: 24px;
-  }
-
-  .references ul {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    padding-bottom: 0px;
-  }
-
-  .navigation a {
-    font-size: 18px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 0px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-  }
-
-  #useless-paragraph {
-    margin: 1in;
-  }
-}
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
-/*
+
 .g body { position: relative; }
 
 .g body::after {
@@ -224,4 +24,130 @@ footer {
 }
 
 .g body:active::after { display: none; }
-*/
+
+
+html {
+  background-color: #97BFB4;
+  color: #4F091D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em; /* 18 / 16 = 1.25 target:18px*/
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333em */
+  padding: 2.6666666666em; /* 24 / 18 = 1.3333333333em */
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: 5.063em; /** 91.125 / 18 **/
+  line-height: 1.333465021em; /* 121.512 / 91.125 */
+  margin: 1.249333333rem; /* 22.488 / 18 */
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.25em; /** 40.5 / 18 **/
+  line-height: 1.333333333em; /* 54 / 40.5 */
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5em; /** 27 / 18 **/
+  font-weight: bolder;
+  line-height: 1.333333333em; /* 36 / 27 */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+body {
+  background-color: #F5EEDC;
+}
+
+main {
+  padding: 1.3333333333em;
+}
+
+nav ul {
+  background-color: rgb(148, 17, 45);
+  padding: 0;
+}
+
+nav a {
+  color: #F5EEDC;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #DD4A48;
+  border-width: 1px;
+  display: block;
+  padding: 12px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 au;
+}
+
+.embellishment-container {
+  font-size: 2.25em; /* 40.5 / 18 */
+  line-height: 1.333333333em; /* 54 / 40.5*/
+  padding: 1.5rem;
+  padding-left: 60px;
+}
+
+.embellishment-container #emb01 {
+  font-family: cursive;
+  font-weight: 600;
+}
+.embellishment-container #emb02 {
+  font-family: monospace;
+}
+.embellishment-container #emb03 {
+  font-weight: 700;
+  font-family: serif;
+}
+
+
+
+.bulleted-list {
+  list-style-type: disc;
+}
+
+.bulleted-list .term {
+  font-size: 0.444em; /* 8 / 18 */
+  font-weight: bold;
+}
+
+.picture-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 556px) {
+
+  html {
+    font-size: 1.125em;
+  }
+
+  .bulleted-list {
+    padding-left: 150px;
+  }
+  
+  .references {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .references ul {
+    border-style:ridge;
+    border-width: 2px;
+    border-color: #DD4A48;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
